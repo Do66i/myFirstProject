@@ -1,0 +1,236 @@
+.SignIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.SignUp {
+  height: 30rem;
+  font-size: 17px;
+  margin: 20vh 0px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: SighUPAnimation;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: infinite; */
+  animation-duration: 7s;
+  animation-timing-function: initial;
+}
+
+.SignUp h1 {
+  font-size: 25px;
+  color: rgba(206, 152, 66, 0.712);
+}
+
+.SignUp input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  font-size: 20px;
+}
+.SignUp input:hover {
+  border-bottom: 2px solid;
+  font-size: 20px;
+  transform: scale(1.05);
+  animation: SighUPAnimation 0.7s forwards;
+}
+
+.SignUp input::placeholder {
+  font-size: 12px;
+  font-family: 'Gowun Batang', seri;
+  color: rgba(128, 128, 128, 0.336);
+}
+
+.SignUp button {
+  font-family: 'Gowun Batang', seri;
+  font-size: 15px;
+  margin-top: 20px;
+  background: white;
+  border: none;
+}
+
+.SignUp button:hover {
+  transform: scale(1.08);
+  animation: 1s forwards;
+}
+
+.SignUp span {
+  color: rgba(198, 129, 129, 0.325);
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.SignUp span:hover {
+  transform: scale(1.08);
+  animation: SignUpshake 4s forwards;
+}
+
+.FlagModal {
+  display: flax;
+  padding: 130px 0px;
+  transform: translate(42%, 50%);
+}
+
+.InModalBox3 {
+  padding-top: 10px;
+}
+
+.InModalBox3 label {
+  font-size: 30px;
+
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: -40px;
+  padding-right: 10px;
+}
+
+.InModalBox3 input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 20px;
+  font-family: 'Gowun Batang', seri;
+  outline: none;
+}
+
+.InModalBox3 input:hover {
+  animation-fill-mode: forwards;
+  animation-name: SighUPAnimation;
+  animation-duration: 1s;
+}
+
+.FlagSubmitButton {
+  border: 2px solid rgba(0, 0, 0, 0);
+  margin-top: 30px;
+  padding: 10px 80px;
+  font-family: 'Gowun Batang', seri;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.FlagSubmitButton:hover {
+  animation-name: SighUPAnimation;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: infinite; */
+  animation-duration: 2s;
+  animation-timing-function: initial;
+}
+
+/*------------------------SIGNIN------------------------*/
+.SignIn {
+  display: block;
+  width: 45%;
+  min-width: 20vw;
+  padding-left: 27%;
+  padding-top: 50%;
+}
+.SignIn label {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(48, 86, 164, 0.919);
+}
+
+.SignIn h1 {
+  font-size: 40px;
+}
+.SignInDiv1 input {
+  outline: none;
+  width: 100%;
+  border: 3px solid rgba(70, 125, 196, 0.287);
+  font-family: 'Gowun Batang', seri;
+  font-size: 30px;
+  background: white;
+  animation-name: SighInAnimation;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+  animation-timing-function: initial;
+}
+
+.SignInBts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SignIn button {
+  background-color: white;
+  border: none;
+  font-family: 'Gowun Batang', seri;
+  font-size: 30px;
+}
+
+.SignIn button:hover {
+  transform: scale(1.08);
+  animation: SignUpshake 4s forwards;
+}
+
+/*------------------------------------------------------*/
+
+/*-------------------- ANIMATION -------------------------*/
+@keyframes SighUPAnimation {
+  50% {
+    border-top-color: rgb(243, 181, 209);
+    border-right-color: rgb(243, 181, 209);
+    -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  }
+  99% {
+    border-bottom-color: rgb(243, 181, 209);
+    border-left-color: rgb(243, 181, 209);
+    -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+      height 0.25s ease-out 0.75s;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+      height 0.25s ease-out 0.75s;
+  }
+  100% {
+    border-color: rgb(243, 181, 209);
+  }
+}
+
+@keyframes SighInAnimation {
+  50% {
+    border-top-color: rgb(70, 125, 196);
+    border-right-color: rgb(70, 125, 196);
+    -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  }
+  99% {
+    border-bottom-color: rgb(70, 125, 196);
+    border-left-color: rgb(70, 125, 196);
+    -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+      height 0.25s ease-out 0.75s;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+      height 0.25s ease-out 0.75s;
+  }
+  100% {
+    border-color: rgb(70, 125, 196);
+  }
+}
+
+@keyframes SignUpshake {
+  0%,
+  80% {
+    transform: rotate(0deg);
+  }
+  5%,
+  15%,
+  25%,
+  35%,
+  45% {
+    transform: rotate(4deg);
+  }
+  10%,
+  40%,
+  30%,
+  40% {
+    transform: rotate(-2deg);
+  }
+}
+/*---------------------------------------------------------*/

@@ -1,0 +1,44 @@
+{
+  "development": {
+    "username": "remember",
+    "password": "remember123",
+    "database": "database_development",
+    "host": "remembertrip.clrcjejkgt1l.ap-northeast-2.rds.amazonaws.com",
+    "port" : 13306,
+    "dialect": "mysql",
+    "timezone": "+09:00",
+    "dialectOptions":{
+      "charset": "utf8mb4",
+      "dateStrings":true,
+      "typeCast":true
+    }
+  },
+  "test": {
+    "username": "remember",
+    "password": "remember123",
+    "database": "database_test",
+    "host": "remembertrip.clrcjejkgt1l.ap-northeast-2.rds.amazonaws.com",
+    "port" : 13306,
+    "dialect": "mysql",
+    "timezone": "+09:00",
+    "dialectOptions":{
+      "charset": "utf8mb4",
+      "dateStrings":true,
+      "typeCast":true
+    }
+  },
+  "production": {
+    "username": "remember",
+    "password": "remember123",
+    "database": "database_production",
+    "host": "remembertrip.clrcjejkgt1l.ap-northeast-2.rds.amazonaws.com",
+    "port" : 13306,
+    "dialect": "mysql",
+    "timezone": "+09:00",
+    "dialectOptions":{
+      "charset": "utf8mb4",
+      "dateStrings":true,
+      "typeCast":true
+    }
+  }
+}

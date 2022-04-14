@@ -1,0 +1,325 @@
+.DiaryEditor {
+  min-height: 600px;
+  text-align: center;
+  padding: 20px;
+}
+
+.DiaryEditor input,
+textarea {
+  margin-bottom: 10px;
+
+  padding: 10px;
+
+  resize: none;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 80%;
+  min-width: 200px;
+  max-width: 800px;
+}
+
+.DiaryEditor textarea:hover {
+  transform: scale(1.03);
+  border-color: #7c98bc;
+}
+
+.DiaryEditor input:hover {
+  transform: scale(1.03);
+  border-color: #7c98bc;
+}
+
+.DiaryEditorInputBox input {
+  margin-top: 40px;
+  border: 1px solid;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.DiaryEditorH2Box {
+  margin-bottom: 20px;
+}
+
+.DiaryEditorInputBox {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.DiaryEditorInputBox input::placeholder {
+  font-family: 'Gowun Batang', serif;
+  color: #32445647;
+  font-style: italic;
+}
+
+.DiaryEditor textarea::placeholder {
+  font-family: 'Gowun Batang', serif;
+  color: #32445647;
+  font-style: italic;
+}
+
+.DiaryEditor textarea {
+  height: 150px;
+}
+
+/* --------------ANIMATION ---------------*/
+@keyframes DiaryModalBtnAnimation {
+  50% {
+    border-top-color: #6bb4fe;
+    border-right-color: #6bb4fe;
+    -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  }
+  99% {
+    border-bottom-color: #6bb4fe;
+    border-left-color: #6bb4fe;
+    -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+      height 0.25s ease-out 0.75s;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+      height 0.25s ease-out 0.75s;
+  }
+  100% {
+    border-color: #6bb4fe;
+  }
+}
+
+@keyframes DiaryListBox {
+  49% {
+    border-top-color: #7c98bc;
+    border-right-color: #7c98bc;
+    -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  }
+  50% {
+    border-top-color: #7c98bc;
+    border-right-color: #7c98bc;
+  }
+  99% {
+    border-bottom-color: #7c98bc;
+    border-left-color: #7c98bc;
+    -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+      height 0.25s ease-out 0.75s;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+      height 0.25s ease-out 0.75s;
+  }
+  100% {
+    border-color: #7c98bc;
+  }
+}
+
+@keyframes shake {
+  0%,
+  80% {
+    transform: rotate(0deg);
+  }
+  5%,
+  15%,
+  25%,
+  35%,
+  45% {
+    transform: rotate(4deg);
+  }
+  10%,
+  40%,
+  30%,
+  40% {
+    transform: rotate(-2deg);
+  }
+}
+
+/* --------------ANIMATION ---------------*/
+
+.DiaryEditor button {
+  margin-top: 30px;
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 40px;
+  background-color: #ececec;
+}
+
+.DiaryEditorBtn:hover {
+  transition: all ease 1s;
+  transform: rotate(-45deg);
+  border-color: #7c98bc;
+}
+
+/* List */
+.DiaryList {
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  animation-name: DiaryListBox;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: infinite; */
+  animation-duration: 7s;
+  animation-timing-function: initial;
+}
+
+.DiaryList h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.DiaryListSpanBox {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  transform-origin: top;
+  animation: shake 4s linear;
+}
+
+.DiaryListSpanBox :first-child {
+  font-weight: bold;
+  color: #7c98bc;
+}
+
+/*-------------itme----------------*/
+
+.DiaryItem {
+  border-radius: 20px;
+  background-color: #669ad549;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.DiaryItem .place {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.DiaryItem .info {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.DiaryItem .date {
+  color: gray;
+}
+
+.DiaryItem .content {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.DiaryItem .DiaryItemBtnBox {
+  display: flex;
+  justify-content: end;
+}
+
+.DiaryItem .DiaryItemRemoteBtn {
+  font-family: 'Gowun Batang', serif;
+  border: none;
+  background-color: #d3e2f4;
+  font-size: 18px;
+}
+
+.DiaryItem .DiaryItemRemoteBtn:hover {
+  transition: all ease 1s;
+  transform: translateY(-5px);
+}
+
+.DiaryItem .DiaryItemEditBtn {
+  font-family: 'Gowun Batang', serif;
+  border: none;
+  background-color: #d3e2f4;
+  font-size: 18px;
+}
+
+.DiaryItem .DiaryItemEditBtn:hover {
+  transition: all ease 1s;
+  transform: translateY(5px);
+}
+
+.DiaryItem .DiaryItemBtnBox :last-child {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.DiaryItem .DiaryItemOptionBtnBox {
+  display: flex;
+  justify-content: end;
+}
+
+.DiaryItem .DiaryItemQuitEditBtn {
+  font-family: 'Gowun Batang', serif;
+  border: none;
+  background-color: #d3e2f4;
+  font-size: 18px;
+}
+
+.DiaryItem .DiaryItemQuitEditBtn:hover {
+  transition: all ease 1s;
+  transform: translateY(-5px);
+}
+
+.DiaryItem .DiaryItemEditSubmitBtn {
+  font-family: 'Gowun Batang', serif;
+  border: none;
+  background-color: #d3e2f4;
+  font-size: 18px;
+}
+
+.DiaryItem .DiaryItemEditSubmitBtn:hover {
+  transition: all ease 1s;
+  transform: translateY(5px);
+}
+
+.DiaryItem .DiaryItemBtnBox :last-child {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.DiaryItem .DiaryItemTextarea {
+  display: flex;
+  align-items: center;
+  width: 75vw;
+}
+
+.DiaryItem .DiaryItemTextarea textarea {
+  font-family: 'Gowun Batang', serif;
+  font-size: 14px;
+  height: 8vw;
+  background-color: #649fd71c;
+}
+
+.DiaryItem .DiaryItemContentSpan {
+  font-family: 'Gowun Batang', serif;
+  font-size: 14px;
+}
+
+/* -------------- ModalView ----------------- */
+.DiaryModalview {
+  border: 5px solid;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ececec;
+
+  width: 80%;
+  min-width: 400px;
+  max-width: 800px;
+  height: 80%;
+
+  animation-name: DiaryModalBtnAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.DiaryModalviewSpanBtn {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.DiaryModalviewDesc {
+  font-size: 30px;
+  margin-top: 0.5em;
+  color: #324456;
+}

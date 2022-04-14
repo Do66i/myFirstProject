@@ -1,0 +1,27 @@
+import React from "react";
+import type { CountryCodes, CustomLabels, OnSelect } from "../../types";
+export declare type Props = {
+    className?: string;
+    selected: string;
+    onSelect: OnSelect;
+    selectButtonClassName?: string;
+    showSelectedLabel?: boolean;
+    showSecondarySelectedLabel?: boolean;
+    showOptionLabel?: boolean;
+    showSecondaryOptionLabel?: boolean;
+    selectedSize?: number;
+    optionsSize?: number;
+    customLabels?: CustomLabels;
+    placeholder?: React.ReactNode;
+    searchable?: boolean;
+    searchPlaceholder?: string;
+    alignOptionsToRight?: boolean;
+    countries?: CountryCodes;
+    blacklistCountries?: boolean;
+    fullWidth?: boolean;
+    disabled?: boolean;
+    id?: string;
+    rfsKey?: string;
+};
+declare const ReactFlagsSelect: React.FC<Props>;
+export default ReactFlagsSelect;

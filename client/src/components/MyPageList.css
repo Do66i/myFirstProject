@@ -1,0 +1,76 @@
+.MyPageP {
+  font-size: 40px;
+  animation-name: MyPageshake;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: infinite; */
+  animation-duration: 5s;
+  animation-timing-function: initial;
+}
+
+.MyPage {
+  display: block;
+  margin: 10%;
+  height: 30%;
+  color: rgb(177, 205, 239);
+}
+
+.MyPageBtnBoxes {
+  margin-top: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.MyPageBtnBoxes button {
+  font-family: 'Gowun Batang', seri;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+}
+
+.MyPageListBox {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: rgb(56, 119, 161);
+}
+
+.item{
+  flex: 1;
+  text-align: center;
+}
+
+.MyPageListBox:hover {
+  transition: all ease 1s;
+  transform: translateX(25px);
+}
+
+.MyPageBtnBoxes button:hover {
+  transition: all ease 1s;
+  transform: translateY(-5px) scale(1.08);
+}
+
+/*------------------------ANIMATION-------------------*/
+@keyframes MyPageshake {
+  0%,
+  80% {
+    transform: rotate(0deg);
+  }
+  5%,
+  15%,
+  25%,
+  35%,
+  45% {
+    transform: rotate(4deg);
+  }
+  10%,
+  40%,
+  30%,
+  40% {
+    transform: rotate(-2deg);
+  }
+}
+
+/*----------------------------------------------------*/
